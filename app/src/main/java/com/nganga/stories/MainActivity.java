@@ -30,6 +30,10 @@ public class MainActivity extends Activity {
         //use a linear layoutmanager
         mlayoutmanager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mlayoutmanager);
+
+        //specify an adapter
+        mAdapter = new MyAdapter(myDataset);
+        mRecyclerView.setAdapter(mAdapter);
     }
 
     @Override
