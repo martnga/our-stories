@@ -6,11 +6,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 /**
  * Created by nganga on 7/26/15.
  */
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
-    private String[] mDataset;
+    private ArrayList<MyStories> myStories;
 
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
@@ -25,8 +27,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public MyAdapter(String[] myDataset) {
-        mDataset = myDataset;
+    public MyAdapter(ArrayList<MyStories> myStories) {
+        this.myStories = myStories;
     }
 
     // Create new views (invoked by the layout manager)
