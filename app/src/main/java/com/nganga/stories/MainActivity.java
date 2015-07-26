@@ -35,8 +35,19 @@ public class MainActivity extends Activity {
 
          ArrayList<MyStories> myStories = new ArrayList<MyStories>();
 
+        //populating the Stories ArrayList
+        for(int i = 0; i < 20; i++)
+        {
+            myStories.add(new MyStories(
+                    "title" + i,
+                    "This are description text",
+                    R.drawable.one;
+
+            ))
+        }
+
         //specify an adapter
-        mAdapter = new MyAdapter(myDataset);
+        mAdapter = new MyAdapter(myStories);
         mRecyclerView.setAdapter(mAdapter);
     }
 
