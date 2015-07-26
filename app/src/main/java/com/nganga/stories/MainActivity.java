@@ -36,12 +36,13 @@ public class MainActivity extends Activity {
          ArrayList<MyStories> myStories = new ArrayList<MyStories>();
 
         //populating the Stories ArrayList
-        for(int i = 0; i < 20; i++)
+        for(int i = 1; i < 9; i++)
         {
             myStories.add(new MyStories(
-                    "title" + i,
-                    "This are description text",
-                    R.drawable.one; ))
+                    "Title " + i,
+                    "This is description text",
+                    R.drawable.like
+            ));
 
 
         }

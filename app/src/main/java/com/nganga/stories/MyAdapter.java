@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import static com.nganga.stories.R.drawable.unlike;
+
 /**
  * Created by nganga on 7/26/15.
  */
@@ -48,16 +50,25 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
     // Replace the contents of a view (invoked by the layout manager)
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(ViewHolder holder, final int position) {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
         TextView  title = (TextView) holder.view.findViewById(R.id.title);
         TextView  desc = (TextView) holder.view.findViewById(R.id.desc);
-        ImageView  imageView = (ImageView) holder.view.findViewById(R.id.imageView);
+        final ImageView  imageView = (ImageView) holder.view.findViewById(R.id.imageView);
 
         title.setText(myStories.get(position).getTitle());
         desc.setText(myStories.get(position).getDesc());
         imageView.setImageResource(myStories.get(position).getImage());
+
+        //toggle like/unlike
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                imageView.setImageResource(R.drawable.unlike);
+            }
+
+        });
 
     }
 
