@@ -55,6 +55,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         TextView  desc = (TextView) holder.view.findViewById(R.id.desc);
         ImageView  imageView = (ImageView) holder.view.findViewById(R.id.imageView);
 
+        title.setText(myStories.get(position).getTitle());
+        desc.setText(myStories.get(position).getDesc());
+        imageView.setImageResource(myStories.get(position).getImage());
+
     }
 
     // Return the size of your dataset (invoked by the layout manager)
