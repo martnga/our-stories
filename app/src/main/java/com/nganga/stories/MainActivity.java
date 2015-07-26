@@ -8,6 +8,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.util.ArrayList;
+
 
 public class MainActivity extends Activity {
 
@@ -30,6 +32,8 @@ public class MainActivity extends Activity {
         //use a linear layoutmanager
         mlayoutmanager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mlayoutmanager);
+
+         ArrayList<MyStories> myStories = new ArrayList<MyStories>();
 
         //specify an adapter
         mAdapter = new MyAdapter(myDataset);
