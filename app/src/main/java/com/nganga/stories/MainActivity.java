@@ -41,9 +41,9 @@ public class MainActivity extends Activity {
             myStories.add(new MyStories(
                     "title" + i,
                     "This are description text",
-                    R.drawable.one;
+                    R.drawable.one; ))
 
-            ))
+
         }
 
         //specify an adapter
