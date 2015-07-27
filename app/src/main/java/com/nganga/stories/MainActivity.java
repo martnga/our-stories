@@ -36,16 +36,47 @@ public class MainActivity extends Activity {
          ArrayList<MyStories> myStories = new ArrayList<MyStories>();
 
         //populating the Stories ArrayList
-        for(int i = 1; i < 9; i++)
-        {
+
             myStories.add(new MyStories(
-                    "Title " + i,
-                    "This is description text",
+                    "The Crazy Monkey",
+                    "How the monkey lost his beard",
                     R.drawable.like
             ));
 
+             myStories.add(new MyStories(
+                "The Little Dandy",
+                "Why hearts get broken",
+                R.drawable.like
+             ));
+             myStories.add(new MyStories(
+                "The Crazy Monkey",
+                "How the monkey lost his beard",
+                R.drawable.like
+             ));
+            myStories.add(new MyStories(
+                "How Many more?",
+                "Tribulations of the lost boy",
+                R.drawable.like
+            ));
+            myStories.add(new MyStories(
+                "The Sorry Morning",
+                "Why we eat Breakfast",
+                R.drawable.like
+            ));
+           myStories.add(new MyStories(
+                "The Cup And The Tree",
+                "Why the Tree lives outside",
+                R.drawable.like
+           ));
+           myStories.add(new MyStories(
+                "The Black Zebra",
+                "How the monkey lost his Stripes",
+                R.drawable.like
+             ));
 
-        }
+
+
+
 
         //specify an adapter
         mAdapter = new MyAdapter(myStories);
