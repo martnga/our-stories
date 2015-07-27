@@ -7,14 +7,14 @@ public class MyStories {
 
     String title;
     String desc;
-    int image;
+    //int image;
 
      //class constructor for the story components
-    public MyStories(String title, String desc, int image)
+    public MyStories(String title, String desc/*, int image*/)
     {
         this.title = title;
         this.desc = desc;
-        this.image = image;
+        //this.image = image;
     }
 
     //getter methods
@@ -28,8 +28,8 @@ public class MyStories {
         return desc;
     }
 
-    public int getImage()
+    /*public int getImage()
     {
         return image;
-    }
+    }*/
 }

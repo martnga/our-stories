@@ -30,7 +30,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         }
     }
 
-    // Provide a suitable constructor (depends on the kind of dataset)
+    // Provide a suitable constructor (depends on the kind of dataset)un
     public MyAdapter(ArrayList<MyStories> myStories) {
         this.myStories = myStories;
     }
@@ -55,20 +55,20 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         // - replace the contents of the view with that element
         TextView  title = (TextView) holder.view.findViewById(R.id.title);
         TextView  desc = (TextView) holder.view.findViewById(R.id.desc);
-        final ImageView  imageView = (ImageView) holder.view.findViewById(R.id.imageView);
+        //final ImageView  imageView = (ImageView) holder.view.findViewById(R.id.imageView);
 
         title.setText(myStories.get(position).getTitle());
         desc.setText(myStories.get(position).getDesc());
-        imageView.setImageResource(myStories.get(position).getImage());
+        //imageView.setImageResource(myStories.get(position).getImage());
 
         //toggle like/unlike
-        imageView.setOnClickListener(new View.OnClickListener() {
+        /*imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 imageView.setImageResource(R.drawable.unlike);
             }
 
-        });
+        });*/
 
     }
 

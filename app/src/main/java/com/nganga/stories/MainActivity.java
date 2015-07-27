@@ -39,39 +39,32 @@ public class MainActivity extends Activity {
 
             myStories.add(new MyStories(
                     "The Crazy Monkey",
-                    "How the monkey lost his beard",
-                    R.drawable.like
+                    "How the monkey lost his beard"
             ));
 
              myStories.add(new MyStories(
                 "The Little Dandy",
-                "Why hearts get broken",
-                R.drawable.like
+                "Why hearts get broken"
              ));
              myStories.add(new MyStories(
                 "The Crazy Monkey",
-                "How the monkey lost his beard",
-                R.drawable.like
+                "How the monkey lost his beard"
              ));
             myStories.add(new MyStories(
                 "How Many more?",
-                "Tribulations of the lost boy",
-                R.drawable.like
+                "Tribulations of the lost boy"
             ));
             myStories.add(new MyStories(
                 "The Sorry Morning",
-                "Why we eat Breakfast",
-                R.drawable.like
+                "Why we eat Breakfast"
             ));
            myStories.add(new MyStories(
                 "The Cup And The Tree",
-                "Why the Tree lives outside",
-                R.drawable.like
+                "Why the Tree lives outside"
            ));
            myStories.add(new MyStories(
                 "The Black Zebra",
-                "How the monkey lost his Stripes",
-                R.drawable.like
+                "How the monkey lost his Stripes"
              ));
 
 
