@@ -1,9 +1,11 @@
 package com.nganga.stories;
 
+import android.app.Fragment;
+
 /**
  * Created by nganga on 7/26/15.
  */
-public class MyStories {
+public class MyStories extends Fragment{
 
     String title;
     String desc;
