@@ -10,13 +10,9 @@ import android.view.ViewGroup;
 /**
  * Created by nganga on 7/26/15.
  */
-public class MyStories extends Fragment {
+public class MyStories  {
 
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-    }
 
     String title;
     String desc;
@@ -24,7 +20,7 @@ public class MyStories extends Fragment {
 
 
     //class constructor for the story components
-    public MyStories(String title, String desc/*, int image*/) {
+    public MyStories(String title, String desc /*, int image*/) {
         this.title = title;
         this.desc = desc;
         //this.image = image;

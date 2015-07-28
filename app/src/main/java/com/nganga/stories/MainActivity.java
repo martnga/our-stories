@@ -1,6 +1,9 @@
 package com.nganga.stories;
 
 import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -63,9 +66,9 @@ public class MainActivity extends Activity {
                 "Why the Tree lives outside"
            ));
            myStories.add(new MyStories(
-                "The Black Zebra",
-                "How the monkey lost his Stripes"
-             ));
+                   "The Black Zebra",
+                   "How the monkey lost his Stripes"
+           ));
 
 
 
@@ -74,7 +77,16 @@ public class MainActivity extends Activity {
         //specify an adapter
         mAdapter = new MyAdapter(myStories);
         mRecyclerView.setAdapter(mAdapter);
+
+
+        MyFragment frag = new MyFragment();
+        FragmentManager manager = getFragmentManager();
+        FragmentTransaction transaction = manager.beginTransaction();
+        transaction.add(R.id.my_layout, frag,"myStories");
+        transaction.commit();
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
